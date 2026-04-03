@@ -1,5 +1,5 @@
 {
-  "name": "pantheon-rtc-poc-worker",
+  "name": "wp-collab-cloudflare-worker",
   "version": "0.1.0",
   "private": true,
   "scripts": {

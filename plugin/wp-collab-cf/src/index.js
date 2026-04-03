@@ -9,12 +9,12 @@ const SYNC_STEP1 = 0;
 const SYNC_STEP2 = 1;
 const SYNC_UPDATE = 2;
 
-const config = window.pantheonRtc || {};
+const config = window.wpCollabCf || {};
 
 if ( config.wsUrl ) {
 	addFilter(
 		'sync.providers',
-		'pantheon-rtc/websocket-provider',
+		'wp-collab-cf/websocket-provider',
 		() => {
 			return [
 				async ( { objectType, objectId, ydoc, awareness } ) => {
@@ -22,7 +22,7 @@ if ( config.wsUrl ) {
 					const Y = window.wp?.sync?.Y;
 					if ( ! Y ) {
 						// eslint-disable-next-line no-console
-						console.error( 'Pantheon RTC: wp.sync.Y not found — wp-sync may not be loaded.' );
+						console.error( 'WP Collab CF: wp.sync.Y not found — wp-sync may not be loaded.' );
 						return { destroy: () => {}, on: () => {} };
 					}
 

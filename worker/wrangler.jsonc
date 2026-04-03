@@ -1,5 +1,5 @@
 {
-  "name": "pantheon-rtc-poc",
+  "name": "wp-collab-cloudflare",
   // Set via CLOUDFLARE_ACCOUNT_ID env var or `wrangler login`
   // "account_id": "",
   "main": "src/index.ts",

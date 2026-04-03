@@ -1,5 +1,5 @@
 {
-  "name": "pantheon-rtc-plugin",
+  "name": "wp-collab-cloudflare-plugin",
   "version": "0.1.0",
   "private": true,
   "scripts": {

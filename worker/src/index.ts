@@ -26,7 +26,7 @@ export default {
     // Health check
     if (url.pathname === "/") {
       return new Response(
-        JSON.stringify({ status: "ok", service: "pantheon-rtc-poc" }),
+        JSON.stringify({ status: "ok", service: "wp-collab-cloudflare" }),
         { headers: { "Content-Type": "application/json" } }
       );
     }
